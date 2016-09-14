@@ -1,4 +1,4 @@
-# DiMu-API-documentation
+# Using the DigitaltMuseum API
 An overview of methods to query the DigitaltMuseum API. This description in created with a specific aim to facilitate querying Nasjonalmuseet's collection in DiMu, but can in principle be used to query any other collections, or across all collections in DiMu.
 
 The DigitaltMuseum API is provided by KulturIT www.kulturit.no. 
