@@ -6,7 +6,7 @@ Their API documentation (in Norwegian) can be found at http://api.dimu.org/doc/p
 DigitaltMuseum contains more than 3,800,000 heritage objects from [Norway](http://www.digitaltmuseum.no) (1,8 mill. objects from 174 museums) and [Sweden](http://www.digitaltmuseum.se) (2 mill. objects from 51 museums) (14.09.2016).
 Nasjonalmuseet currently has 36,000 objects available in DigitaltMuseum.
 
-<h2>Museums and collections</h2>
+<h2>Museums and collections in DigitaltMuseum</h2>
 
 An XML overview of museums or collections per country can be found like this:
 
@@ -16,4 +16,10 @@ An XML overview of museums or collections per country can be found like this:
 The term `owner` here corresponds to a museum or collection. Each owner has an element `identifier` which is used to limit an API search.
 The `owner` structure is flat, but owners that are children of other owners in the hiearchy have a `parent` element. Calls to the API should always be limited to one or more owners unless you specifically need to query the entire index.
 
+<h2>Querying DigitaltMuseum SOLR index</h2>
 
+Søk gjøres mot solr og støtter de vanligste parametere, på select request handler.
+
+Felter:
+
+Det finnes endel felter i solr indeksen, som er søkbare. Noen av feltene er lagret og ikke kjørt igjennom noen tokenizer og noen felter som er kjørt igjennom tokenizers, etc og er ikke lagret, men søkbare. Typiske eksempler på felter, som er lagret er .ingress. feltene. De blir brukt til å vise informasjon i søkeresultatet. Det finnes flere lagrede felter, som ikke har vært endel av ingress, og ikke heter .ingress., men som kan brukes.
