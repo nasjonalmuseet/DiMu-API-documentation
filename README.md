@@ -19,7 +19,7 @@ An XML overview of museums or collections per country can be found like this:
 
 The term `owner` here corresponds to a museum or collection. Each owner has an element `identifier` which is used to limit an API search. The `owner` structure is flat, but owners that are children of other owners in the hiearchy have a `parent` element. Calls to the API should always be limited to one or more owners unless you specifically need to query the entire index.
 
-Nasjonalmuseet's museum code is `NMK`, however object metadata is kept under each individual collection code: `NMK-A` (Architecture), `NMK-B`(Art) and `NMK-D`(Design).
+Nasjonalmuseet's owner code is `NMK`, however object metadata is kept under each individual collection: `NMK-A` (Architecture), `NMK-B` (Art) and `NMK-D` (Design). Nasjonalmuseet's exhibitions are organised under the `NMK` owner code.
 
 <h2>Querying the DiMu Solr index</h2>
 
