@@ -26,7 +26,7 @@ Fields:
 
 Det finnes endel felter i solr indeksen, som er søkbare. Noen av feltene er lagret og ikke kjørt igjennom noen tokenizer og noen felter som er kjørt igjennom tokenizers, etc og er ikke lagret, men søkbare. Typiske eksempler på felter, som er lagret er .ingress. feltene. De blir brukt til å vise informasjon i søkeresultatet. Det finnes flere lagrede felter, som ikke har vært endel av ingress, og ikke heter .ingress., men som kan brukes.
 
-``` json
+``` javascript
 {
 artifact.ingress.title: "Stemma. Quattrocento [Maleri]",
 artifact.ingress.producer: "Slaattelid, Mari",
