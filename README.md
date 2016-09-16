@@ -5,7 +5,7 @@ DigitaltMuseum contains more than 3,800,000 heritage objects from [Norway](http:
 Nasjonalmuseet currently has 36,000 objects available in DigitaltMuseum.
 
 The DiMu API is provided by [KulturIT](http://www.kulturit.no). 
-Their API documentation (in Norwegian) can be found at http://api.dimu.org/doc/public_api.html.
+A general API documentation (Norwegian) is at http://api.dimu.org/doc/public_api.html.
 The API endpoint is `http://api.dimu.org/`
 
 <h2>DiMu museums and collections</h2>
