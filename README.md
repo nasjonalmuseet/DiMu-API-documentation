@@ -13,8 +13,7 @@ An XML overview of museums or collections per country can be found like this:
 `/api/owners?country=no&api.key=demo`
 `/api/owners?country=se&api.key=demo`
 
-The term `owner` here corresponds to museum or collection. Each owner has an element `identifier` which is used to limit an API search.
+The term `owner` here corresponds to a museum or collection. Each owner has an element `identifier` which is used to limit an API search.
+The `owner` structure is flat, but owners that are children of other owners in the hiearchy have a ´parent´ element that points to the parent owner. Calls to the API should always be limited to one or more owners unless you specifically need to query the entire index.
 
-i API’et tilsvarer museum/samling og skal brukes for å avgrense søk. Heretter brukes owner istedet for museum/samling. Hver owner i XML har et element <identifier>, som skal brukes for å avgrense søk i indeks. Owner’s strukturen er flat, men owner’s som ligger under andre owners i hierarkiet inneholder et <parent>, som peker til overordnet owner.
 
-Alle søk skal begrenses på en eller flere owner’s.
