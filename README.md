@@ -28,29 +28,29 @@ Det finnes endel felter i solr indeksen, som er søkbare. Noen av feltene er lag
 
 ``` javascript
 {
-artifact.ingress.title: "Stemma. Quattrocento [Maleri]",
-artifact.ingress.producer: "Slaattelid, Mari",
-artifact.uuid: "5A4FCFDD-CB15-4DB1-971F-4FF5D15E68F6",
-artifact.pictureCount: 1,
-artifact.defaultPictureIndex: 15618,
-artifact.childCount: 2,
-artifact.defaultMediaIdentifier: "012wWWHgNJLA",
-artifact.hasPictures: true,
-artifact.uniqueId: "021045839502",
-artifact.ingress.production.toYear: 1999,
-artifact.ingress.producerRole: "Kunstner",
-artifact.publishedDate: "2015-04-18T06:18:23.538Z",
-artifact.ingress.license: [
-"AC 1"
-],
-identifier.id: "MS-04266-1999",
-artifact.hasChildren: true,
-identifier.owner: "NMK-B",
-artifact.type: "Fineart",
-artifact.ingress.production.fromYear: 1999,
-artifact.ingress.subjects: [
-"Bildende kunst"
-],
-artifact.updatedDate: "2015-09-22T07:49:19.08Z"
+  artifact.ingress.title: "Stemma. Quattrocento [Maleri]",
+  artifact.ingress.producer: "Slaattelid, Mari",
+  artifact.uuid: "5A4FCFDD-CB15-4DB1-971F-4FF5D15E68F6",
+  artifact.pictureCount: 1,
+  artifact.defaultPictureIndex: 15618,
+  artifact.childCount: 2,
+  artifact.defaultMediaIdentifier: "012wWWHgNJLA",
+  artifact.hasPictures: true,
+  artifact.uniqueId: "021045839502",
+  artifact.ingress.production.toYear: 1999,
+  artifact.ingress.producerRole: "Kunstner",
+  artifact.publishedDate: "2015-04-18T06:18:23.538Z",
+  artifact.ingress.license: [
+    "AC 1"
+    ],
+  identifier.id: "MS-04266-1999",
+  artifact.hasChildren: true,
+  identifier.owner: "NMK-B",
+  artifact.type: "Fineart",
+  artifact.ingress.production.fromYear: 1999,
+  artifact.ingress.subjects: [
+    "Bildende kunst"
+    ],
+  artifact.updatedDate: "2015-09-22T07:49:19.08Z"
 }
 ```
