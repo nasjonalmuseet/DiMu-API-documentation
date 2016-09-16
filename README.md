@@ -10,10 +10,10 @@ Nasjonalmuseet currently has 36,000 objects available in DigitaltMuseum.
 
 An XML overview of museums or collections per country can be found like this:
 
-`/api/owners?country=no&api.key=demo`
-`/api/owners?country=se&api.key=demo`
+`/api/owners?country=no&api.key=demo
+/api/owners?country=se&api.key=demo`
 
 The term `owner` here corresponds to a museum or collection. Each owner has an element `identifier` which is used to limit an API search.
-The `owner` structure is flat, but owners that are children of other owners in the hiearchy have a ´parent´ element that points to the parent owner. Calls to the API should always be limited to one or more owners unless you specifically need to query the entire index.
+The `owner` structure is flat, but owners that are children of other owners in the hiearchy have a `parent` element. Calls to the API should always be limited to one or more owners unless you specifically need to query the entire index.
 
 
