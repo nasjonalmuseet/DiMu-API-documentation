@@ -6,6 +6,8 @@ Their API documentation (in Norwegian) can be found at http://api.dimu.org/doc/p
 DigitaltMuseum contains more than 3,800,000 heritage objects from [Norway](http://www.digitaltmuseum.no) (1,8 mill. objects from 174 museums) and [Sweden](http://www.digitaltmuseum.se) (2 mill. objects from 51 museums) (14.09.2016).
 Nasjonalmuseet currently has 36,000 objects available in DigitaltMuseum.
 
+The API endpoint is *http://api.dimu.org/*
+
 <h2>DiMu museums and collections</h2>
 
 An XML overview of museums or collections per country can be found like this:
@@ -18,7 +20,7 @@ An XML overview of museums or collections per country can be found like this:
 The term `owner` here corresponds to a museum or collection. Each owner has an element `identifier` which is used to limit an API search.
 The `owner` structure is flat, but owners that are children of other owners in the hiearchy have a `parent` element. Calls to the API should always be limited to one or more owners unless you specifically need to query the entire index.
 
-<h2>Querying DiMu Solr index</h2>
+<h2>Querying the DiMu Solr index</h2>
 
 Queries to the DiMu Solr index supports most common parameters, including paging, sorting and to a certain extent faceting.
 
