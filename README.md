@@ -58,13 +58,13 @@ There are several searchable fields in the solr index. Some are stored and not t
 ```
 | Field name | Description |
 | ---------- | ------------|
-|identifier.id|Identifiserer objektet|
+|identifier.id|Museum or collection's own identifier / inventory no.|
 |identifier.owner|Museum or collection code|
-|artifact.uniqueId|Unik Id for objekt. Fremtidens løsning for oppslag.|
-|artifact.type|Type objekt|
-|artifact.pictureCount|Antall bilder|
-|artifact.hasPictures|true/false om objektet har bilde|
-|artifact.defaultMediaIdentifier|Id for standardbilde i Dimu Multimedia Server (DMS).|
+|artifact.uniqueId|Unique id for object, assigned by Primus/DiMu|
+|artifact.type|Type of object, e.g. 'Exhibition'|
+|artifact.pictureCount|No. of images for this object|
+|artifact.hasPictures|true/false|
+|artifact.defaultMediaIdentifier|Id for default picture on DiMu media server (DMS)|
 |artifact.defaultPictureIndex|imageId for standardbilde (utgår)|
 |artifact.publishedDate|Dato for publisering|
 |artifact.updatedDate|Dato for siste oppdatering|
