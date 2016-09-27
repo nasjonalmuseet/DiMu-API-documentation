@@ -57,7 +57,9 @@ There are several searchable fields in the solr index. Some are stored and not t
 }
 ```
 `identifier.id`                          : Identifiserer objektet
+
 `identifier.owner`                       : Identifiserer museum/samling
+
 `artifact.uniqueId`                      : Unik Id for objekt. Fremtidens løsning for oppslag.
 `artifact.type`                          : Type objekt
 `artifact.pictureCount`                 : Antall bilder
