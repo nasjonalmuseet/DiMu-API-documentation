@@ -56,9 +56,10 @@ There are several searchable fields in the solr index. Some are stored and not t
   artifact.updatedDate: "2015-09-22T07:49:19.08Z"
 }
 ```
-`identifier.id`                          : Identifiserer objektet
-
-`identifier.owner`                       : Identifiserer museum/samling
+| Field name | Description |
+| ---------- | ------------|
+|identifier.id|Identifiserer objektet|
+|identifier.owner|Museum or collection code|
 
 `artifact.uniqueId`                      : Unik Id for objekt. Fremtidens løsning for oppslag.
 `artifact.type`                          : Type objekt
