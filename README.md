@@ -56,7 +56,7 @@ There are several searchable fields in the solr index. Some are stored and not t
   artifact.updatedDate: "2015-09-22T07:49:19.08Z"
 }
 ```
-<h4>Indexed fields for display</h4>
+<h4>Indexed fields</h4>
 | Field name | Description |
 | ---------- | ------------|
 |*identifier.id*|Museum or collection's own identifier / inventory no.|
@@ -74,7 +74,7 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.ingress.producerRole*|Role code for producer: Artist, designer, architect etc|
 |*artifact.ingress.additionalProducers*|Any additional producers|
 |*artifact.ingress.production.fromYear*|Production year start|
-|*artifact.ingress.production.toYear*|Production year end|
+|*artifact.ingress.production.toYear*<br>*artifact.event.toYear*|Production year end|
 |*artifact.ingress.production.place*|Production place|
 |*artifact.ingress.classification*|Classification|
 |*artifact.ingress.subjects*|Subjects|
