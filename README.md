@@ -74,8 +74,8 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.ingress.producerRole*|Role code for producer: Artist, designer, architect etc|
 |*artifact.ingress.additionalProducers*|Any additional producers|
 |*artifact.ingress.production.fromYear*|Production year start|
-|- *artifact.ingress.production.toYear*
-<br>- *artifact.event.toYear*|Production year end|
+|*-artifact.ingress.production.toYear*
+<br>*-artifact.event.toYear*|Production year end|
 |*artifact.ingress.production.place*|Production place|
 |*artifact.ingress.classification*|Classification|
 |*artifact.ingress.subjects*|Subjects|
