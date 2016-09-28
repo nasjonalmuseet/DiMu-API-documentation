@@ -62,39 +62,35 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*identifier.id*|Museum or collection's own identifier / inventory no.|
 |*identifier.owner*|Museum or collection code|
 |*artifact.uniqueId*|Unique id for object, assigned by Primus/DiMu|
+|*artifact.name*|Name, alternative name, etc| 
 |*artifact.type*|Type of object, e.g. 'Exhibition'|
+|*artifact.classification*|Classification|
 |*artifact.pictureCount*|No. of images for this object|
 |*artifact.hasPictures*|true/false|
 |*artifact.defaultMediaIdentifier*|Id for default picture on DiMu media server (DMS)|
 |~~*artifact.defaultPictureIndex*~~|~~Id for default picture~~ (obsolete)|
 |*artifact.publishedDate*|Date published to DiMu|
 |*artifact.updatedDate*|Last updated|
-|*artifact.ingress.title*|Object title|
-|*artifact.ingress.producer*|Producer|
+|*artifact.ingress.title*
+<br>*artifact.title*|Object title|
+|*artifact.ingress.producer*
+<br>*artifact.producer*|Producer|
 |*artifact.ingress.producerRole*|Role code for producer: Artist, designer, architect etc|
 |*artifact.ingress.additionalProducers*|Any additional producers|
-|*artifact.ingress.production.fromYear*|Production year start|
-|*-artifact.ingress.production.toYear*
-<br>*-artifact.event.toYear*|Production year end|
-|*artifact.ingress.production.place*|Production place|
+|*artifact.ingress.production.fromYear*
+<br>*artifact.event.fromYear*|Production year start|
+|*artifact.ingress.production.toYear*
+<br>*artifact.event.toYear*|Production year end|
+|*artifact.ingress.production.place*
+<br>*artifact.event.place*|Production place|
 |*artifact.ingress.classification*|Classification|
 |*artifact.ingress.subjects*|Subjects|
-|*artifact.ingress.license*|Object license (not picture license)|
-
-<h4>Indexed fields for search only</h4>
-| Field name | Description |
-| ---------- | ------------|
-|*artifact.name*|Name, alternative name, etc| 
-|*artifact.title*|Object title|
-|*artifact.classification*|Classification|
-|*artifact.producer*|Producer|
 |*artifact.depictedPerson*|Depicted person|
 |*artifact.depictedPlace*|Depicted place|
 |*artifact.material*|Material|
 |*artifact.technique*|Technique|
-|*artifact.license*|Object license (not picture license)|
-|*artifact.eventDescription*|Historikkbeskrivelse|
-|*artifact.event.fromYear*|Production from year|
-|*artifact.event.toYear*|Production from year|
-|*artifact.event.place*|Production place|
+|*artifact.ingress.license*
+<br>*artifact.license*|Object license (not picture license)|
 |*allContent*|Free text search field (default)|
+|*artifact.eventDescription*|Historikkbeskrivelse|
+
