@@ -78,3 +78,20 @@ There are several searchable fields in the solr index. Some are stored and not t
 |artifact.ingress.classification|Klassifisering|
 |artifact.ingress.subjects|Emneord|
 |artifact.ingress.license|Lisens|
+
+| Field name | Description |
+| ---------- | ------------|
+|*artifact.name*|Betegnelse, alternativ betegnelse, etc| 
+- 'artifact.title'                         : Tittel
+- 'artifact.classification'                : Klassifisering
+- 'artifact.producer'                      : Produsent
+- 'artifact.depictedPerson'                : Avbildet person
+- 'artifact.depictedPlace'                 : Avbildet sted
+- 'artifact.material'                      : Materiale
+- 'artifact.technique'                     : Teknikk
+- 'artifact.license'                       : Lisens
+- 'artifact.eventDescription'              : Historikkbeskrivelse
+- 'artifact.event.fromYear'                : Produksjon/Bruk fra år
+- 'artifact.event.toYear'                  : Produksjon/Bruk til år
+- 'artifact.event.place'                   : Produksjon/Bruk sted
+- 'allContent'                             : Fritekstsøkefelt (default)
