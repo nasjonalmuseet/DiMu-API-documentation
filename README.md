@@ -59,9 +59,9 @@ There are several searchable fields in the solr index. Some are stored and not t
 <h4>Indexed fields</h4>
 | Field name | Description |
 | ---------- | ------------|
-|*identifier.id*|Museum or collection's own identifier / inventory no.|
-|*identifier.owner*|Museum or collection code|
-|*artifact.uniqueId*|Unique id for object, assigned by Primus/DiMu|
+|*identifier.id*|Museum or collection's own identifier / inventory no., e.g. NMK.2005.0257|
+|*identifier.owner*|Museum or collection code, e.g. NMK-B|
+|*artifact.uniqueId*|DiMu-specific unique id for object, e.g. 021045835852|
 |*artifact.name*|Name, alternative name, etc| 
 |*artifact.type*|Type of object, e.g. 'Exhibition'|
 |*artifact.classification*|Classification|
