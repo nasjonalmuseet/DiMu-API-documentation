@@ -25,7 +25,7 @@ Nasjonalmuseet's owner code is `NMK`, however object metadata is kept under each
 
 For queries to the DiMu Solr index most common parameters can be used, including paging, sorting and to a certain extent faceting.
 
-<h4>Fields:</h4>
+<h3>Fields:</h3>
 There are several searchable fields in the solr index. Some are stored and not tokenized, and some fields are tokenized but not stored, but still searchable. Typical examples of stored fields are the `.ingress.` fields. The content of these fields are displayed in the search result. There are other stored fields that are not part of `.ingress.` that can be be used.
 
 ``` javascript
@@ -56,6 +56,7 @@ There are several searchable fields in the solr index. Some are stored and not t
   artifact.updatedDate: "2015-09-22T07:49:19.08Z"
 }
 ```
+<h4>Indexed fields for display</h4>
 | Field name | Description |
 | ---------- | ------------|
 |*identifier.id*|Museum or collection's own identifier / inventory no.|
@@ -79,19 +80,20 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.ingress.subjects*|Emneord|
 |*artifact.ingress.license*|Lisens|
 
+<h4>Indexed fields for search only</h4>
 | Field name | Description |
 | ---------- | ------------|
 |*artifact.name*|Betegnelse, alternativ betegnelse, etc| 
-- 'artifact.title'                         : Tittel
-- 'artifact.classification'                : Klassifisering
-- 'artifact.producer'                      : Produsent
-- 'artifact.depictedPerson'                : Avbildet person
-- 'artifact.depictedPlace'                 : Avbildet sted
-- 'artifact.material'                      : Materiale
-- 'artifact.technique'                     : Teknikk
-- 'artifact.license'                       : Lisens
-- 'artifact.eventDescription'              : Historikkbeskrivelse
-- 'artifact.event.fromYear'                : Produksjon/Bruk fra år
-- 'artifact.event.toYear'                  : Produksjon/Bruk til år
-- 'artifact.event.place'                   : Produksjon/Bruk sted
-- 'allContent'                             : Fritekstsøkefelt (default)
+|*artifact.title*|Tittel|
+|*artifact.classification*|Klassifisering|
+|*artifact.producer*|Produsent|
+|*artifact.depictedPerson*|Avbildet person|
+|*artifact.depictedPlace*|Avbildet sted|
+|*artifact.material*|Materiale|
+|*artifact.technique*|Teknikk|
+|*artifact.license*|Lisens|
+|*artifact.eventDescription*|Historikkbeskrivelse|
+|*artifact.event.fromYear*|Produksjon/Bruk fra år|
+|*artifact.event.toYear*|Produksjon/Bruk til år|
+|*artifact.event.place*|Produksjon/Bruk sted|
+|*allContent*|Fritekstsøkefelt (default)|
