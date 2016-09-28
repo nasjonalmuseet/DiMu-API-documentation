@@ -64,7 +64,7 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.uniqueId*|DiMu-specific unique id for object, e.g. 021045835852|
 |*artifact.name*|Name, alternative name, etc| 
 |*artifact.type*|Type of object, e.g. 'Exhibition'|
-|*artifact.classification*|Classification|
+|*artifact.classification*|Classification. Nasjonalmuseet uses Outline[http://kulturnav.org/a8797483-ff02-4a4c-adf1-b406cbcd6fc2]] where relevant.|
 |*artifact.pictureCount*|No. of images for this object|
 |*artifact.hasPictures*|*true* or *false*|
 |*artifact.defaultMediaIdentifier*|Id for default picture on DiMu media server (DMS)|
