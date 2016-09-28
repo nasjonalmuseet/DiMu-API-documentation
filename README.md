@@ -72,28 +72,28 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.ingress.title*|Object title|
 |*artifact.ingress.producer*|Producer|
 |*artifact.ingress.producerRole*|Role code for producer: Artist, designer, architect etc|
-|*artifact.ingress.additionalProducers*|Evt. flere produsenter|
-|*artifact.ingress.production.fromYear*|Produksjonsår start intervall|
-|*artifact.ingress.production.toYear*|Produksjonsår slutt intervall|
-|*artifact.ingress.production.place*|Produksjonssted|
-|*artifact.ingress.classification*|Klassifisering|
-|*artifact.ingress.subjects*|Emneord|
-|*artifact.ingress.license*|Lisens|
+|*artifact.ingress.additionalProducers*|Any additional producers|
+|*artifact.ingress.production.fromYear*|Production year start|
+|*artifact.ingress.production.toYear*|Production year end|
+|*artifact.ingress.production.place*|Production place|
+|*artifact.ingress.classification*|Classification|
+|*artifact.ingress.subjects*|Subjects|
+|*artifact.ingress.license*|Object license (not picture license)|
 
 <h4>Indexed fields for search only</h4>
 | Field name | Description |
 | ---------- | ------------|
-|*artifact.name*|Betegnelse, alternativ betegnelse, etc| 
-|*artifact.title*|Tittel|
-|*artifact.classification*|Klassifisering|
-|*artifact.producer*|Produsent|
-|*artifact.depictedPerson*|Avbildet person|
-|*artifact.depictedPlace*|Avbildet sted|
-|*artifact.material*|Materiale|
-|*artifact.technique*|Teknikk|
-|*artifact.license*|Lisens|
+|*artifact.name*|Name, alternative name, etc| 
+|*artifact.title*|Object title|
+|*artifact.classification*|Classification|
+|*artifact.producer*|Producer|
+|*artifact.depictedPerson*|Depicted person|
+|*artifact.depictedPlace*|Depicted place|
+|*artifact.material*|Material|
+|*artifact.technique*|Technique|
+|*artifact.license*|Object license (not picture license)|
 |*artifact.eventDescription*|Historikkbeskrivelse|
-|*artifact.event.fromYear*|Produksjon/Bruk fra år|
-|*artifact.event.toYear*|Produksjon/Bruk til år|
-|*artifact.event.place*|Produksjon/Bruk sted|
-|*allContent*|Fritekstsøkefelt (default)|
+|*artifact.event.fromYear*|Production from year|
+|*artifact.event.toYear*|Production from year|
+|*artifact.event.place*|Production place|
+|*allContent*|Free text search field (default)|
