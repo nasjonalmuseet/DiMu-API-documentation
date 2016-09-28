@@ -66,7 +66,7 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.type*|Type of object, e.g. 'Exhibition'|
 |*artifact.classification*|Classification|
 |*artifact.pictureCount*|No. of images for this object|
-|*artifact.hasPictures*|true/false|
+|*artifact.hasPictures*|*true* or *false*|
 |*artifact.defaultMediaIdentifier*|Id for default picture on DiMu media server (DMS)|
 |*artifact.publishedDate*|Date published to DiMu|
 |*artifact.updatedDate*|Last updated|
