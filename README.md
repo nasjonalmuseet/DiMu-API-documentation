@@ -77,7 +77,7 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.ingress.production.fromYear* or *artifact.event.fromYear*|Production year start|
 |*artifact.ingress.production.toYear* or *artifact.event.toYear*|Production year end|
 |*artifact.ingress.production.place* or *artifact.event.place*|Production place|
-|*artifact.ingress.classification*|Classification|
+|*artifact.eventDescription*|Event description||*artifact.ingress.classification*|Classification|
 |*artifact.ingress.subjects*|Subjects|
 |*artifact.depictedPerson*|Depicted person|
 |*artifact.depictedPlace*|Depicted place|
@@ -85,5 +85,3 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.technique*|Technique|
 |*artifact.ingress.license* or *artifact.license*|Object license (not picture license)|
 |*allContent*|Free text search field (default)|
-|*artifact.eventDescription*|Historikkbeskrivelse|
-
