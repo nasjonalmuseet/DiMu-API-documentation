@@ -67,11 +67,11 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.hasPictures*|true/false|
 |*artifact.defaultMediaIdentifier*|Id for default picture on DiMu media server (DMS)|
 |~~*artifact.defaultPictureIndex*~~|~~Id for default picture~~ (obsolete)|
-|*artifact.publishedDate*|Dato for publisering|
-|*artifact.updatedDate*|Dato for siste oppdatering|
-|*artifact.ingress.title*|Tittel for objekt|
-|*artifact.ingress.producer*|Produsent for objekt|
-|*artifact.ingress.producerRole*|Rollekode for produsent|
+|*artifact.publishedDate*|Date published to DiMu|
+|*artifact.updatedDate*|Last updated|
+|*artifact.ingress.title*|Object title|
+|*artifact.ingress.producer*|Producer|
+|*artifact.ingress.producerRole*|Role code for producer: Artist, designer, architect etc|
 |*artifact.ingress.additionalProducers*|Evt. flere produsenter|
 |*artifact.ingress.production.fromYear*|Produksjonsår start intervall|
 |*artifact.ingress.production.toYear*|Produksjonsår slutt intervall|
