@@ -58,26 +58,26 @@ There are several searchable fields in the solr index. Some are stored and not t
 ```
 | Field name | Description |
 | ---------- | ------------|
-|identifier.id|Museum or collection's own identifier / inventory no.|
-|identifier.owner|Museum or collection code|
-|artifact.uniqueId|Unique id for object, assigned by Primus/DiMu|
-|artifact.type|Type of object, e.g. 'Exhibition'|
-|artifact.pictureCount|No. of images for this object|
-|artifact.hasPictures|true/false|
-|artifact.defaultMediaIdentifier|Id for default picture on DiMu media server (DMS)|
-|artifact.defaultPictureIndex|imageId for standardbilde (utgår)|
-|artifact.publishedDate|Dato for publisering|
-|artifact.updatedDate|Dato for siste oppdatering|
-|artifact.ingress.title|Tittel for objekt|
-|artifact.ingress.producer|Produsent for objekt|
-|artifact.ingress.producerRole|Rollekode for produsent|
-|artifact.ingress.additionalProducers|Evt. flere produsenter|
-|artifact.ingress.production.fromYear|Produksjonsår start intervall|
-|artifact.ingress.production.toYear|Produksjonsår slutt intervall|
-|artifact.ingress.production.place|Produksjonssted|
-|artifact.ingress.classification|Klassifisering|
-|artifact.ingress.subjects|Emneord|
-|artifact.ingress.license|Lisens|
+|*identifier.id*|Museum or collection's own identifier / inventory no.|
+|*identifier.owner*|Museum or collection code|
+|*artifact.uniqueId*|Unique id for object, assigned by Primus/DiMu|
+|*artifact.type*|Type of object, e.g. 'Exhibition'|
+|*artifact.pictureCount*|No. of images for this object|
+|*artifact.hasPictures*|true/false|
+|*artifact.defaultMediaIdentifier*|Id for default picture on DiMu media server (DMS)|
+|~~*artifact.defaultPictureIndex*~~|~~Id for default picture~~ (obsolete)|
+|*artifact.publishedDate*|Dato for publisering|
+|*artifact.updatedDate*|Dato for siste oppdatering|
+|*artifact.ingress.title*|Tittel for objekt|
+|*artifact.ingress.producer*|Produsent for objekt|
+|*artifact.ingress.producerRole*|Rollekode for produsent|
+|*artifact.ingress.additionalProducers*|Evt. flere produsenter|
+|*artifact.ingress.production.fromYear*|Produksjonsår start intervall|
+|*artifact.ingress.production.toYear*|Produksjonsår slutt intervall|
+|*artifact.ingress.production.place*|Produksjonssted|
+|*artifact.ingress.classification*|Klassifisering|
+|*artifact.ingress.subjects*|Emneord|
+|*artifact.ingress.license*|Lisens|
 
 | Field name | Description |
 | ---------- | ------------|
