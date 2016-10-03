@@ -10,7 +10,7 @@ The API endpoint is `http://api.dimu.org/`
 
 <h2>DiMu museums and collections</h2>
 
-An XML overview of museums or collections per country can be found like this:
+An xml overview of museums or collections per country can be found like this:
 
 ```
 /api/owners?country=no&api.key=demo
@@ -25,7 +25,7 @@ Nasjonalmuseet's owner code is `NMK`, however object metadata is kept under each
 
 For queries to the DiMu Solr index most common parameters can be used, including paging, sorting and to a certain extent faceting.
 
-<h3>Fields:</h3>
+<h3>Fields</h3>
 There are several searchable fields in the solr index. Some are stored and not tokenized, and some fields are tokenized but not stored, but still searchable. Typical examples of stored fields are the `.ingress.` fields. The content of these fields are displayed in the search result. There are other stored fields that are not part of `.ingress.` that can be be used.
 
 ``` javascript
