@@ -85,3 +85,8 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.technique*|Technique|
 |*artifact.ingress.license* or *artifact.license*|Object license (not picture license)|
 |*allContent*|Free text search field (default)|
+
+<h2>Detail view</h2>
+A detailed view of individual objects can be requested, represented in JSON by default. Use the object’s artifact.uuid from the Solr result to retrieve a detailed view, e.g.
+´http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8´
+(full record)
