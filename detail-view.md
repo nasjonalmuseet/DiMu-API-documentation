@@ -1,4 +1,5 @@
 <h2>Collection object detailed view</h2>
+http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 ``` Javascript
 {
 motif: {
