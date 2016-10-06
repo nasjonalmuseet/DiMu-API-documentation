@@ -6,62 +6,13 @@ The url above will return a JSON representation of the object. Below are comment
 ``` Javascript
 {
 motif: {
-depictedObjects: [ ],
-motifTypes: [
-"Landskap"
-],
-titles: [ ],
-classifications: [ ],
-depictedPlaces: [
-{
-coordinate: "60.12235539038782, 6.61376953125", // some objects will have coordinates, e.g. for motifs, place of production or location of a building
-fields: [],
-role: {
-code: "70",
-name: "Avbildet sted "
-},
-uuid: "3F62B18C-64BE-42BD-B25B-709F3D35B93D"
+  depictedObjects: [ ],
+  motifTypes: [
+    "Stilleben"
+  ],
+  titles: [ ],
+  classifications: [ ]
 }
-],
-subjects: [
-{
-nameType: "subject",
-name: "Folklore"
-},
-{
-nameType: "subject",
-name: "Fjell"
-},
-{
-nameType: "subject",
-name: "Fjord"
-}
-]
-},
-exhibitions: [ ],
-links: [ ],
-commentCount: 3,
-titles: [
-{
-status: "anvendt",
-language: "NOR",
-title: "Brudeferd i Hardanger"
-},
-{
-status: "anvendt",
-language: "ENG",
-title: "Bridal Procession on the Hardangerfjord"
-}
-],
-references: [ ],
-names: [
-{
-nameType: "name",
-name: "Maleri",
-uuid: "F147B1FA-9CE3-43E7-909B-B24579740047"
-}
-],
-uuid: "3DF10C96-B33B-45C1-92BF-D9211CE574C8",
 ```
 <h3>Media</h3>
 This particular object has three pictures. Resolution is specified. If width and height is set to 0, the image is of older date and of low resolution (below 800px). The picture files can hold a separate copyright license than the actual collection object. All Nasjonalmuseet's picture files are licensend CC-BY-NC. If a collection object is under copyright, license information will be specificed in the metadata.
@@ -69,34 +20,18 @@ This particular object has three pictures. Resolution is specified. If width and
 media: {
   pictures: [
     {
-      index: 113292,
+      index: 113324,
       code: "0",
       width: 4000,
       licenses: [ ],
-      photographer: "Høstland, Børre",
-      identifier: "022wXVwUz7gt",
-      height: 2866
-      },
-    {
-      index: 125266,
-      code: "3",
-      width: 4000,
-      licenses: [ ],
-      identifier: "032wazTL9iqb",
-      height: 2888
-      },
-    {
-      index: 125267,
-      code: "3",
-      width: 4000,
-      licenses: [ ],
-      identifier: "032wazTL9iuz",
-      height: 2872
-    }
+      photographer: "Jarre, Anne Hansteen",
+      identifier: "032wXVwUzT6J",
+      height: 3297
+      }
     ],
   mediaFiles: [ ],
   movies: [ ]
-},
+}
 ```
 <h3>Technique</h3>
 ``` Javascript
