@@ -1,6 +1,32 @@
 <h2>Collection object detailed view</h2>
 http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 The url above will return a JSON representation of the object. Below are comments on central parts of the metadata returned.
+<h3>Titles</h3>
+Titles are sometimes specificed with a language attribute. If none is present it is assumed that the title is in Norwegian.
+``` Javascript
+titles: [
+  {
+    status: "anvendt",
+    language: "NOR",
+    title: "Nature morte"
+  },
+  {
+    status: "anvendt",
+    language: "ENG",
+    title: "Still life"
+  },
+  {
+    status: "anvendt",
+    language: "FRA",
+    title: "Nature morte: pot à lait et fruits sur une table"
+  },
+  {
+    status: "anvendt",
+    language: "DEU",
+    title: "Stilleben mit Milchkrug und Früchten auf einem Tisch"
+  }
+]
+```
 
 <h3>Motif</h3>
 Motif information varies in detail, and can contain depicted objects, people, places, geocoordinates, motif types/genres etc.
