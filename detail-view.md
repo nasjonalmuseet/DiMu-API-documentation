@@ -11,21 +11,7 @@ classifications: [ ],
 depictedPlaces: [
 {
 coordinate: "60.12235539038782, 6.61376953125",
-fields: [
-{
-placeType: "country",
-sort: 1,
-number: 1,
-value: "Norge",
-name: "Land"
-},
-{
-sort: 4,
-number: 3,
-value: "Hardanger",
-name: "Område"
-}
-],
+fields: [],
 role: {
 code: "70",
 name: "Avbildet sted "
@@ -719,7 +705,7 @@ identifier: {
 owner: "NMK-B",
 id: "NMK.2005.0373"
 },
-  relation: "Relatert motiv"
+relation: "Relatert motiv"
 }
 ],
 publishStatus: "published",
