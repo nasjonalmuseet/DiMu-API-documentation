@@ -1,6 +1,8 @@
 <h2>Collection object detailed view</h2>
 http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
-The url above will return a JSON representation of the object.
+The url above will return a JSON representation of the object. Below are comments on central parts of the metadata returned.
+
+<h3>Motif</h3>
 ``` Javascript
 {
 motif: {
@@ -60,37 +62,44 @@ uuid: "F147B1FA-9CE3-43E7-909B-B24579740047"
 }
 ],
 uuid: "3DF10C96-B33B-45C1-92BF-D9211CE574C8",
+```
+<h3>Media</h3>
+This particular object has three pictures. Resolution is specified. If width and height is set to 0, the image is of older date and of low resolution (below 800px). The picture files can hold a separate copyright license than the actual collection object. All Nasjonalmuseet's picture files are licensend CC-BY-NC. If a collection object is under copyright, license information will be specificed in the metadata.
+``` Javascript
 media: {
-pictures: [
-{
-index: 113292,
-code: "0",
-width: 4000,
-licenses: [ ],
-photographer: "Høstland, Børre",
-identifier: "022wXVwUz7gt",
-height: 2866
+  pictures: [
+    {
+      index: 113292,
+      code: "0",
+      width: 4000,
+      licenses: [ ],
+      photographer: "Høstland, Børre",
+      identifier: "022wXVwUz7gt",
+      height: 2866
+      },
+    {
+      index: 125266,
+      code: "3",
+      width: 4000,
+      licenses: [ ],
+      identifier: "032wazTL9iqb",
+      height: 2888
+      },
+    {
+      index: 125267,
+      code: "3",
+      width: 4000,
+      licenses: [ ],
+      identifier: "032wazTL9iuz",
+      height: 2872
+    }
+    ],
+  mediaFiles: [ ],
+  movies: [ ]
 },
-{
-index: 125266,
-code: "3",
-width: 4000,
-licenses: [ ],
-identifier: "032wazTL9iqb",
-height: 2888
-},
-{
-index: 125267,
-code: "3",
-width: 4000,
-licenses: [ ],
-identifier: "032wazTL9iuz",
-height: 2872
-}
-],
-mediaFiles: [ ],
-movies: [ ]
-},
+```
+<h3>Technique</h3>
+``` Javascript
 technique: {
 techniques: [
 {
