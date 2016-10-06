@@ -1,5 +1,6 @@
 <h2>Collection object detailed view</h2>
 http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
+The url above will return a JSON representation of the object.
 ``` Javascript
 {
 motif: {
@@ -11,7 +12,7 @@ titles: [ ],
 classifications: [ ],
 depictedPlaces: [
 {
-coordinate: "60.12235539038782, 6.61376953125",
+coordinate: "60.12235539038782, 6.61376953125", // some objects will have coordinates, e.g. for motifs, place of production or location of a building
 fields: [],
 role: {
 code: "70",
