@@ -3,6 +3,7 @@ http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 The url above will return a JSON representation of the object. Below are comments on central parts of the metadata returned.
 
 <h3>Motif</h3>
+Motif information varies in detail, and can contain people, places, geocoordinates, motif types/genres etc.
 ``` Javascript
 {
 motif: {
