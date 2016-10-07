@@ -101,6 +101,7 @@ http://api.dimu.org/api/solr/select?q=*&fq:identifier.owner:NMK*&fq=artifact.pro
 
 <b>Facet query</b>
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&api.key=hack4no&rows=0
+
 *Note: Must use a valid key, e.g. `hack4no`, to have privileges to set custom value of parameters like `rows`.
 
 <h2>Detail view</h2>
