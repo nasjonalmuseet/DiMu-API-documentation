@@ -1,5 +1,6 @@
 <h2>Collection object detailed view</h2>
 http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
+
 The url above will return a JSON representation of the object. Below are comments on central parts of the metadata returned.
 <h3>Titles</h3>
 Titles are sometimes specificed with a language attribute. If none is present it is assumed that the title is in Norwegian.
@@ -144,9 +145,3 @@ producers: [
       publishLevel: "extended"
     }
 ]
-```
-<h3>More</h3>
-``` Javascript
-kkkkkk
-```
-
