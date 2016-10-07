@@ -92,3 +92,7 @@ A detailed view of individual objects can be requested, represented in JSON by d
 http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 ```
 [Se here for an overview of the individual object representation](detail-view.md).
+
+<h2>Retrieving media</h2>
+All photo files from Nasjonalmuseet's collection are licensend [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/legalcode). The copyright of individual objects, in particular artworks, can carry a copyright that prevents free re-use. Any copyright for an individual object will be represented in the metadata.
+[See here for a description of how to retrieve pictures from the DiMu media servers](retrieving-media.md).
