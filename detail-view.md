@@ -61,6 +61,7 @@ media: {
   movies: [ ]
 }
 ```
+[Retrieving pictures from the DiMu media servers](retrieving-media.md).
 <h3>Technique</h3>
 ``` Javascript
 technique: {
