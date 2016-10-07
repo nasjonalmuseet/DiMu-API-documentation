@@ -105,8 +105,6 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.has
 <b>Facet by producer, ordered by frequency / number of objects in collection:</b>
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&facet.sort=count&rows=0&api.key=hack4no
 
-*Note: Must use a valid key, e.g. `hack4no`, to have privileges to set custom value of parameters like `rows`.
-
 <h2>Detail view</h2>
 A detailed view of individual objects can be requested, represented in JSON by default. Use the object’s `artifact.uuid` from the Solr result to retrieve a detailed view, e.g.
 ```
