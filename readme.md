@@ -99,6 +99,9 @@ http://api.dimu.org/api/solr/select?q=*&fq:identifier.owner:NMK*&fq=artifact.nam
 <b>Objects by a specific artist/producer (*Harriet Backer*)</b>
 http://api.dimu.org/api/solr/select?q=*&fq:identifier.owner:NMK*&fq=artifact.producer:Harriet%20Backer&wt=json&api.key=demo
 
+<b>Facet query</b>
+http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&api.key=demo&rows=0
+
 <h2>Detail view</h2>
 A detailed view of individual objects can be requested, represented in JSON by default. Use the object’s `artifact.uuid` from the Solr result to retrieve a detailed view, e.g.
 ```
