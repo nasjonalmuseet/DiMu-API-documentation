@@ -4,7 +4,7 @@ Pictures of each object can be retrieved by using the media identifier from eith
 artifact.defaultMediaIdentifier: "012wWWHgNJLA"
 ```
 
-or from the detail view (media=>pittures=>identfier)
+or from the detail view (media=>pictures=>identfier)
 ``` Javascript
 media: {
   pictures: [
