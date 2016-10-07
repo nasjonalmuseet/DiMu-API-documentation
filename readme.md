@@ -86,6 +86,11 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.ingress.license* or *artifact.license*|Object license (not picture license)|
 |*allContent*|Free text search field (default)|
 
+<h2>Example Solr query</h2>
+http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&wt=json&api.key=hack4no
+
+The above query will return all Nasjonalmuseet's object in the DiMu API. Mandatory parameters for a query are the `q` parameter and an api key. (For hackathons in 2016, the `hack4o` key can be used.)
+
 <h2>Detail view</h2>
 A detailed view of individual objects can be requested, represented in JSON by default. Use the object’s `artifact.uuid` from the Solr result to retrieve a detailed view, e.g.
 ```
