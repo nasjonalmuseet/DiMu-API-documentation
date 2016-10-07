@@ -22,11 +22,11 @@ media: {
   movies: [ ]
 }
 ```
-Use the mediaservers at
+Use the mediaservers at `dms01.dimu.org`, e.g.
 
-`http://dms01.dimu.org/image/032wXVwUz7v2?dimension=max`
+http://dms01.dimu.org/image/032wXVwUz7v2?dimension=max
 
-and the identifier key followed by a `dimension`parameter. Possible values for dimension are:
+The identifier key should be followed by a `dimension`parameter. Possible values for dimension are:
 - max (full resolution, up to 4000px for the newest pictures
 - 1200x1200
 - 800x800
@@ -34,8 +34,9 @@ and the identifier key followed by a `dimension`parameter. Possible values for d
 - 400x400
 - 250x250
 
-*NOTE: the prefix in the media server, dms01, can be varied like dms02, dms03 ... up to dms09.
+*NOTE: The images are in JPEG format, but served without .jpg suffix. The <b>dms01.dimu.org</b> servers are not CORS enabled. 
+The <b>fdms01.dimu.org</b> servers should be CORS enabled, but haven't been tested extensively.*
+
+*NOTE2: the prefix in the media server, dms01, can be varied like dms02, dms03 ... up to dms09.
 Also, a faster cached image index can be accessed by using the `fmds01` prefix.*
 
-*NOTE2: The images are in JPEG format, but served without .jpg suffix. The <b>dms01.dimu.org</b> servers are not CORS enabled. 
-The <b>fdms01.dimu.org</b> servers should be CORS enabled, but haven't been tested extensively.*
