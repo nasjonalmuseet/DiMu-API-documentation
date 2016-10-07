@@ -38,4 +38,4 @@ and the identifier key followed by a `dimension`parameter. Possible values for d
 Also, a faster cached image index can be accessed by using the `fmds01` prefix.*
 
 *NOTE2: The images are in JPEG format, but served without .jpg suffix.
-The <b>dms01.dimu.org</b> servers are not CORS enabled. The <b>fdms01.dimu.org</b> servers should be CORS enabled, but haven't been tested extensively. 
+The <b>dms01.dimu.org</b> servers are not CORS enabled. The <b>fdms01.dimu.org</b> servers should be CORS enabled, but haven't been tested extensively.*
