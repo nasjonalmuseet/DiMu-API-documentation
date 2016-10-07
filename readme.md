@@ -93,16 +93,16 @@ The above query will return all Nasjonalmuseet's objects in the DiMu API. Mandat
 <b>Objects related to a place (*Oslo*):</b>
 http://api.dimu.org/api/solr/select?q=*&fq:identifier.owner:NMK*&fq=artifact.event.place:(Oslo)&wt=json&api.key=demo
 
-<b>Object type (*Maleri / painting*)</b>
+<b>Object type (*Maleri / painting*):</b>
 http://api.dimu.org/api/solr/select?q=*&fq:identifier.owner:NMK*&fq=artifact.name:Maleri&wt=json&api.key=demo
 
-<b>Objects by a specific artist/producer (*Harriet Backer*)</b>
+<b>Objects by a specific artist/producer (*Harriet Backer*):</b>
 http://api.dimu.org/api/solr/select?q=*&fq:identifier.owner:NMK*&fq=artifact.producer:Harriet%20Backer&wt=json&api.key=demo
 
-<b>Facet by producer, ordered alphabetically (default)</b>
+<b>Facet by producer, ordered alphabetically (default):</b>
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&rows=0&api.key=hack4no
 
-<b>Facet by producer, ordered by frequency / number of objects in collection</b>
+<b>Facet by producer, ordered by frequency / number of objects in collection:</b>
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&facet.sort=count&rows=0&api.key=hack4no
 
 *Note: Must use a valid key, e.g. `hack4no`, to have privileges to set custom value of parameters like `rows`.
