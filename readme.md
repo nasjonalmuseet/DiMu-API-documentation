@@ -96,6 +96,10 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.eve
 <b>Object type (*Maleri / painting*):</b>
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Maleri&wt=json&api.key=demo
 
+<b>Object type (*Yakusha-e*)</b>
+With a specified number of rows returned. 100 rows is maximum. The resultat can be paged with the `start` parameter.
+http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Yakusha-e&wt=json&api.key=hack4no&rows=100
+
 <b>Objects by a specific artist/producer (*Harriet Backer*):</b>
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.producer:Harriet%20Backer&wt=json&api.key=demo
 
