@@ -32,7 +32,7 @@ Nasjonalmuseet's owner code is `NMK`, however object metadata is kept under each
 For queries to the DiMu Solr index most common parameters can be used, including paging, sorting and to a certain extent faceting.
 
 <h3>Fields</h3>
-There are several searchable fields in the solr index. Some are stored and not tokenized, and some fields are tokenized but not stored, but still searchable. Typical examples of stored fields are the `.ingress.` fields. The content of these fields are displayed in the search result. There are other stored fields that are not part of `.ingress.` that can be be used.
+There are several searchable fields in the solr index. Some are stored and not tokenized, and some fields are tokenized but not stored, but still searchable. Typical examples of stored fields are the `.ingress.` fields. The content of these fields are displayed in the response. There are other stored fields that are not part of `.ingress.` that can be be used.
 
 ``` javascript
 {
@@ -107,7 +107,7 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.nam
 
 <b>Object type [*Yakusha-e*]:</b>
 
-With a specified number of rows returned. 100 rows is maximum. The resultat can be paged with the `start` parameter.
+With a specified number of rows returned. 100 rows is maximum. The response can be paged with the `start` parameter.
 
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Yakusha-e&wt=json&rows=100&api.key=hack4no
 
@@ -124,9 +124,9 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.has
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&facet.sort=count&rows=0&api.key=hack4no
 
 <a name="detail"></a><h2>Object detailed view</h2>
-The Solr index has some limitations in certain fields. For instance, it will only return one title for an object although an object can have multiple titles, for instance titles in other languages. Also, the Solr response will only list one production per object even if more exist, and it will not list any attribute associated with the production event, e.g. if a production event carries the attribute <em>antatt sikker</em> (<em>assumed certain</em>). 
+The Solr response has some limitations in certain fields. For instance, it will only return one title for an object although an object can have multiple titles, for instance titles in other languages. Also, the Solr response will only list one producer per object even if more exist, and it will not list any attribute associated with the production event, e.g. if a production event carries the attribute <em>antatt sikker</em> (<em>assumed certain</em>). 
 
-The detailed view (in JSON) of individual objects is requested by using the object’s `artifact.uuid` from the Solr result, e.g.
+The detailed view (in JSON) of individual objects is requested by using the object’s `artifact.uuid` from the Solr response, e.g.
 ```
 http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 ```
