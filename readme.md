@@ -1,5 +1,11 @@
 # Using the DigitaltMuseum API
-An overview of methods to query the DigitaltMuseum (DiMu) API. This description in created with a specific aim to facilitate querying Nasjonalmuseet's collection in DiMu, but it can in principle be used to query any other collection or across all collections in DiMu.
+- [introduction](#)
+- [Querying the Solr index](#solr)
+- [Example Solr queries](#examples)
+- [Object detailed view](#detail)
+- [Retrieving media](#media)
+
+This is an overview of methods to query the DigitaltMuseum (DiMu) API. This description in created with a specific aim to facilitate querying Nasjonalmuseet's collection in DiMu, but it can in principle be used to query any other collection or across all collections in DiMu.
 
 DigitaltMuseum contains more than 3,860,000 heritage objects from [Norway](http://www.digitaltmuseum.no) (1,85 mill. objects from 174 museums) and [Sweden](http://www.digitaltmuseum.se) (2 mill. objects from 51 museums) (27.09.2016).
 Nasjonalmuseet currently has 36,000 objects available in DigitaltMuseum. [Nasjonalmuseet's metadata are licensed Creative Commons Zero CC0](license.md). Re-use is encouraged.
@@ -21,7 +27,7 @@ The term `owner` here corresponds to a museum or collection. Each owner has an e
 
 Nasjonalmuseet's owner code is `NMK`, however object metadata is kept under each individual collection: `NMK-A` (Architecture), `NMK-B` (Art) and `NMK-D` (Design). Nasjonalmuseet's exhibitions are organised under the `NMK` owner code.
 
-<h2>Querying the DiMu Solr index</h2>
+<a name="solr"></a><h2>Querying the DiMu Solr index</h2>
 
 For queries to the DiMu Solr index most common parameters can be used, including paging, sorting and to a certain extent faceting.
 
@@ -86,8 +92,9 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*artifact.ingress.license* or *artifact.license*|Object license (not picture license)|
 |*allContent*|Free text search field (default)|
 
-<h2>Example Solr queries</h2>
+<a name="examples"></a><h2>Example Solr queries</h2>
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&wt=json&api.key=hack4no
+
 The above query will return all Nasjonalmuseet's objects in the DiMu API. Mandatory parameters for a query are the `q` parameter and an api key. (For hackathons in 2016, the `hack4o` key can be used.)
 
 <b>Objects related to a place (*Oslo*):</b>
@@ -116,7 +123,7 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.has
 
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&facet.sort=count&rows=0&api.key=hack4no
 
-<h2>Detail view</h2>
+<a name="detail"></a><h2>Object detailed view</h2>
 A detailed view of individual objects can be requested, represented in JSON by default. Use the object’s `artifact.uuid` from the Solr result to retrieve a detailed view, e.g.
 ```
 http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
@@ -124,6 +131,6 @@ http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 The detailed view will return more fields than the Solr search, in particular it will have a more elaborate description of the production event.
 [Se here for an overview of the individual object representation](detail-view.md).
 
-<h2>Retrieving media</h2>
+<a name="media"></a><h2>Retrieving media</h2>
 All photo files from Nasjonalmuseet's collection are licensend [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/legalcode). The copyright of individual objects, in particular artworks, can carry a copyright that prevents free re-use. Any copyright for an individual object will be represented in the metadata.
 [See here for how to retrieve pictures from the DiMu media servers](retrieving-media.md).
