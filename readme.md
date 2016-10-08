@@ -1,5 +1,5 @@
 # Using the DigitaltMuseum API
-- [introduction](#)
+- [Introduction](#)
 - [Querying the Solr index](#solr)
 - [Example Solr queries](#examples)
 - [Object detailed view](#detail)
