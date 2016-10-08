@@ -1,4 +1,4 @@
-<h2>Collection object detailed view</h2>
+<h2>Collection object full view</h2>
 http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 
 The url above will return a JSON representation of the object. Below are comments on central parts of the metadata returned.
