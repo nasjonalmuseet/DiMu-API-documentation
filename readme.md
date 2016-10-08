@@ -2,7 +2,7 @@
 - [Introduction](#)
 - [Querying the Solr index](#solr)
 - [Example Solr queries](#examples)
-- [Extended object view](#full)
+- [Full object view](#full)
 - [Retrieving media](#media)
 
 This is an overview of methods to query the DigitaltMuseum (DiMu) API. This description in created with a specific aim to facilitate querying Nasjonalmuseet's collection in DiMu, but it can in principle be used to query any other collection or across all collections in DiMu.
