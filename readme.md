@@ -2,7 +2,7 @@
 - [Introduction](#)
 - [Querying the Solr index](#solr)
 - [Example Solr queries](#examples)
-- [Object detailed view](#detail)
+- [Extended object view](#full)
 - [Retrieving media](#media)
 
 This is an overview of methods to query the DigitaltMuseum (DiMu) API. This description in created with a specific aim to facilitate querying Nasjonalmuseet's collection in DiMu, but it can in principle be used to query any other collection or across all collections in DiMu.
@@ -124,15 +124,15 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.has
 
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&facet.sort=count&rows=0&api.key=hack4no
 
-<a name="detail"></a><h2>Object detailed view</h2>
-The Solr response has some limitations in certain fields. For instance, it will only return one title for an object although multiple titles may exist, for instance titles in other languages. Also, the Solr response will only list one producer per object even if more exist, and it will not list any attribute associated with the production event. E.g. if a production event carries the attribute <em>antatt sikker</em> (<em>presumed certain</em>), it will not be present in the Solr response.. 
+<a name="full-object-view"></a><h2>Full object view</h2>
+The Solr response has limitations in certain fields. For instance, it will only return one title for an object although multiple titles may exist, for instance titles in other languages. Also, the Solr response will only list one producer per object even if more exist, and it will not list any attribute associated with the production event. E.g. if a production event carries the attribute <em>antatt sikker</em> (<em>presumed certain</em>), it will not be present in the Solr response.. 
 
-The detailed view (in JSON) of individual objects is requested by using the object’s `artifact.uuid` from the Solr response:.
+The full object view (in JSON) of individual objects is requested by using the object’s `artifact.uuid` from the Solr response:.
 ```
 http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 ```
-The detailed view will return more fields than the Solr response, in particular it will have a more elaborate description of the production event.
-[Se here for an overview of the individual object representation](detail-view.md).
+The full view will return more fields than the Solr response, in particular it will have a more elaborate description of the production event.
+[Se here for an overview of the full object representation](full-object-view.md).
 
 <a name="media"></a><h2>Retrieving media</h2>
 All photo files from Nasjonalmuseet's collection are licensend [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/legalcode). The copyright of individual objects, in particular artworks, can carry a copyright that prevents free re-use. Any copyright for an individual object will be represented in the metadata.
