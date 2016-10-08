@@ -91,13 +91,14 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&wt=json&api.key
 The above query will return all Nasjonalmuseet's objects in the DiMu API. Mandatory parameters for a query are the `q` parameter and an api key. (For hackathons in 2016, the `hack4o` key can be used.)
 
 <b>Objects related to a place (*Oslo*):</b>
+
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.event.place:(Oslo)&wt=json&api.key=demo
 
 <b>Object type (*Maleri / painting*):</b>
 
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Maleri&wt=json&api.key=demo
 
-<b>Object type (*Yakusha-e*)</b>
+<b>Object type (*Yakusha-e*):</b>
 
 With a specified number of rows returned. 100 rows is maximum. The resultat can be paged with the `start` parameter.
 
