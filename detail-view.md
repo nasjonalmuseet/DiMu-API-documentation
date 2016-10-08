@@ -65,12 +65,12 @@ media: {
 <h3>Technique</h3>
 ``` Javascript
 technique: {
-techniques: [
-{
-sort: 1,
-technique: "Olje"
-}
-]
+  techniques: [
+    {
+      sort: 1,
+      technique: "Olje"
+    }
+  ]
 }
 ```
 <h3>Production</h3>
