@@ -1,5 +1,5 @@
 <h2>Retrieving pictures from the DiMu media servers</h2>
-Pictures of each object can be retrieved by using the media identifier from either the Solr result
+Pictures of each object can be retrieved by using the media identifier from either the Solr response
 ``` Javascript
 artifact.defaultMediaIdentifier: "012wWWHgNJLA"
 ```
