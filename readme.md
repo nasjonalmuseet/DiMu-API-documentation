@@ -130,7 +130,7 @@ The detailed view (in JSON) of individual objects is requested by using the obje
 ```
 http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 ```
-The detailed view will return more fields than the Solr search, in particular it will have a more elaborate description of the production event.
+The detailed view will return more fields than the Solr response, in particular it will have a more elaborate description of the production event.
 [Se here for an overview of the individual object representation](detail-view.md).
 
 <a name="media"></a><h2>Retrieving media</h2>
