@@ -94,19 +94,25 @@ The above query will return all Nasjonalmuseet's objects in the DiMu API. Mandat
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.event.place:(Oslo)&wt=json&api.key=demo
 
 <b>Object type (*Maleri / painting*):</b>
+
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Maleri&wt=json&api.key=demo
 
 <b>Object type (*Yakusha-e*)</b>
+
 With a specified number of rows returned. 100 rows is maximum. The resultat can be paged with the `start` parameter.
+
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Yakusha-e&wt=json&api.key=hack4no&rows=100
 
 <b>Objects by a specific artist/producer (*Harriet Backer*):</b>
+
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.producer:Harriet%20Backer&wt=json&api.key=demo
 
 <b>Facet by producer, ordered alphabetically (default):</b>
+
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&rows=0&api.key=hack4no
 
 <b>Facet by producer, ordered by frequency / number of objects in collection:</b>
+
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&facet.sort=count&rows=0&api.key=hack4no
 
 <h2>Detail view</h2>
