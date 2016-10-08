@@ -124,7 +124,7 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.has
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&facet.sort=count&rows=0&api.key=hack4no
 
 <a name="detail"></a><h2>Object detailed view</h2>
-The Solr response has some limitations in certain fields. For instance, it will only return one title for an object although an object can have multiple titles, for instance titles in other languages. Also, the Solr response will only list one producer per object even if more exist, and it will not list any attribute associated with the production event, e.g. if a production event carries the attribute <em>antatt sikker</em> (<em>assumed certain</em>). 
+The Solr response has some limitations in certain fields. For instance, it will only return one title for an object although multiple titles may exist, for instance titles in other languages. Also, the Solr response will only list one producer per object even if more exist, and it will not list any attribute associated with the production event. E.g. if a production event carries the attribute <em>antatt sikker</em> (<em>presumed certain</em>), it will not be present in the Solr response.. 
 
 The detailed view (in JSON) of individual objects is requested by using the object’s `artifact.uuid` from the Solr response, e.g.
 ```
