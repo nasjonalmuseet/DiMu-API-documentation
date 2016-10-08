@@ -74,7 +74,7 @@ technique: "Olje"
 }
 ```
 <h3>Production</h3>
-Some producers (persons) have a more detailed level of information, such as time and place of birth and death, sometimes with geocoordinates, as well as [VIAF](https://viaf.org/) identifier and link, which can for instanced be utilised to retrieve biographical information from VIAF, Wikipedia, Wikidata etc.
+Some producers (persons) have a more detailed level of information, such as time and place of birth and death, sometimes with geocoordinates, as well as [VIAF](https://viaf.org/) identifier and link, which can be utilised to retrieve biographical information from VIAF, Wikipedia, Wikidata etc.
 ``` Javascript
 producers: [
     {
