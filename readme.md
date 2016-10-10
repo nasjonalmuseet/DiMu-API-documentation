@@ -10,7 +10,7 @@ This is an overview of methods to query the DigitaltMuseum (DiMu) API. The follo
 DigitaltMuseum contains more than 3,860,000 heritage objects from [Norway](http://www.digitaltmuseum.no) (1,85 mill. objects from 174 museums) and [Sweden](http://www.digitaltmuseum.se) (2 mill. objects from 51 museums) (27.09.2016).
 Nasjonalmuseet currently has 36,000 objects available in DigitaltMuseum. [Nasjonalmuseet's metadata are licensed Creative Commons Zero CC0](license.md). Re-use is encouraged.
 
-DigitaltMuseum and API to the metadata is provided by [KulturIT](http://www.kulturit.no). A general API documentation (Norwegian) is at http://api.dimu.org/doc/public_api.html. The documentation below is based on KulturIT's documentation and on Nasjonalmuseet's experience using the API to create web applications using our own data in DiMu. [Disclaimer](disclaimer.md)
+DigitaltMuseum and API to the metadata is provided by [KulturIT](http://www.kulturit.no). A general API documentation (in Norwegian only) is at http://api.dimu.org/doc/public_api.html. The documentation below is based on KulturIT's documentation and on Nasjonalmuseet's experience using the API to create web applications using our own data in DiMu. [Disclaimer](disclaimer.md)
 
 The API endpoint is `http://api.dimu.org/`
 
