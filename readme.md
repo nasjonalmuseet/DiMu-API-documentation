@@ -127,7 +127,7 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.has
 <a name="full"></a><h2>Full object view</h2>
 The Solr response has limitations in certain fields. For instance, it will only return one title for an object although multiple titles may exist, for instance titles in other languages. Also, the Solr response will only list one producer per object even if more exist, and it will not list any attribute associated with the production event. E.g. if a production event carries the attribute <em>antatt sikker</em> (<em>presumed certain</em>), it will not be present in the Solr response.. 
 
-The full object view (in JSON) of individual objects is requested by using the object’s `artifact.uuid` from the Solr response:.
+The full object view (in JSON) of individual objects can be requested by using the object’s `artifact.uuid` from the Solr response:
 ```
 http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 ```
