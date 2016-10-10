@@ -37,6 +37,7 @@ The identifier key should be followed by a `dimension`parameter. Possible values
 *NOTE: The images are in JPEG format, but served without .jpg suffix. The <b>dms01.dimu.org</b> servers are not CORS enabled. 
 The <b>fdms01.dimu.org</b> servers should be CORS enabled, but haven't been tested extensively.*
 
-*NOTE2: the prefix in the media server, dms01, can be varied like dms02, dms03 ... up to dms09.
-Also, a faster cached image index can be accessed by using the `fmds01` prefix.*
+*NOTE2: The prefix in the media server, dms01, can be varied like dms02, dms03 ... up to dms09.
+
+*NOTE3: A faster cached image index can be accessed by using the `fmds01` prefix. This should only be used after prior agreement with KulturIT.*
 
