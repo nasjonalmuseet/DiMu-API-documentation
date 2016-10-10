@@ -29,7 +29,7 @@ Nasjonalmuseet's owner code is `NMK`, however object metadata is kept under each
 
 <a name="solr"></a><h2>Querying the DiMu Solr index</h2>
 
-For queries to the DiMu Solr index most common parameters can be used, including paging, sorting and to a certain extent faceting.
+For queries to the DiMu Solr index most common parameters can be used, including paging, sorting and to a certain extent faceting. 
 
 <h3>Fields</h3>
 There are several searchable fields in the solr index. Some are stored and not tokenized, and some fields are tokenized but not stored, but still searchable. Typical examples of stored fields are the `.ingress.` fields. The content of these fields are displayed in the response. There are other stored fields that are not part of `.ingress.` that can be be used.
@@ -62,6 +62,9 @@ There are several searchable fields in the solr index. Some are stored and not t
   artifact.updatedDate: "2015-09-22T07:49:19.08Z"
 }
 ```
+<h4>Response formats</h4>
+The response will be in xml by default. Add the parameter `wt=json` for a JSON response.
+
 <h4>Indexed fields</h4>
 | Field name | Description |
 | ---------- | ------------|
@@ -94,6 +97,7 @@ There are several searchable fields in the solr index. Some are stored and not t
 |*allContent*|Free text search field (default)|
 
 <a name="examples"></a><h2>Example Solr queries</h2>
+
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&wt=json&api.key=hack4no
 
 The above query will return all Nasjonalmuseet's objects in the DiMu API. Mandatory parameters for a query are the `q` parameter and an api key. (For hackathons in 2016, the `hack4o` key can be used.)
