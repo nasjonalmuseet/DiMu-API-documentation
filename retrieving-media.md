@@ -1,7 +1,7 @@
 <h2>Retrieving pictures from the DiMu media servers</h2>
 Pictures of each object can be retrieved by using the media identifier from either the Solr response
 ``` Javascript
-artifact.defaultMediaIdentifier: "012wWWHgNJLA"
+artifact.defaultMediaIdentifier: "032wXVwUzT6J"
 ```
 
 or from the detail view (media=>pictures=>identfier)
