@@ -110,11 +110,11 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.eve
 
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Maleri&wt=json&api.key=demo
 
-<b>Object type [*Yakusha-e*]:</b>
+<b>Object type [*Ukiyo-e*]:</b>
 
-With a specified number of rows returned. 100 rows is maximum. The response can be paged with the `start` parameter.
+With a specified number of rows returned per request. 100 rows is maximum. The response can be paged with the `start` parameter.
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Yakusha-e&wt=json&rows=100&api.key=hack4no
+http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Ukiyo-e&wt=json&rows=100&api.key=hack4no
 
 <b>Objects by a specific artist/producer [*Harriet Backer*]:</b>
 
