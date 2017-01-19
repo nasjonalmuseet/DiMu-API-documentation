@@ -106,15 +106,21 @@ The above query will return all Nasjonalmuseet's objects in the DiMu API. Mandat
 
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.event.place:Oslo&wt=json&api.key=demo
 
-<b>Object type [*Maleri* (painting)]:</b>
+<b>Object name [*Maleri* (painting)]:</b>
 
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Maleri&wt=json&api.key=demo
 
-<b>Object type [*Ukiyo-e*]:</b>
+<b>Object name [*Ukiyo-e*]:</b>
 
 With a specified number of rows returned per request. 100 rows is maximum. The response can be paged with the `start` parameter.
 
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Ukiyo-e&wt=json&rows=100&api.key=hack4no
+
+<b>Object type [*Exhibition*]:</b>
+
+With a specified number of rows returned per request. 100 rows is maximum. The response can be paged with the `start` parameter.
+
+http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.type:Exhibition&wt=json&rows=100&api.key=hack4no
 
 <b>Objects by a specific artist/producer [*Harriet Backer*]:</b>
 
