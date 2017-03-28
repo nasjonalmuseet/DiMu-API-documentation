@@ -34,6 +34,7 @@ For queries to the DiMu Solr index most common parameters can be used, including
 <h3>Fields</h3>
 There are several searchable fields in the solr index. Some are stored and not tokenized, and some fields are tokenized but not stored, but still searchable. Typical examples of stored fields are the `ingress` fields. The content of these fields are displayed in the response. There are other stored fields that are not part of `ingress` that can be be used.
 
+
 ``` javascript
 {
   artifact.ingress.title: "Stemma. Quattrocento [Maleri]",
@@ -63,6 +64,7 @@ There are several searchable fields in the solr index. Some are stored and not t
 }
 ```
 <h4>Response formats</h4>
+
 The response will be in xml by default. Add the parameter `wt=json` for a JSON response.
 
 
