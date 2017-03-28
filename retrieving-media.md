@@ -50,5 +50,3 @@ e.g.`http://dms01.dimu.org/image/032wXVwUz7v2?dimension=250x250&filename=myFile.
 
 The `dms01.dimu.org` servers are not CORS enabled. 
 The `fdms01.dimu.org` servers should be CORS enabled, but haven't been tested extensively.*
-
-
