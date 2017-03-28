@@ -63,7 +63,7 @@ There are several searchable fields in the solr index. Some are stored and not t
 }
 ```
 <h4>Response formats</h4>
-The response will be in xml by default. Add the parameter `wt=json` for a JSON response.
+The response will be in xml by default. Add the parameter `wt\=json` for a JSON response.
 
 <h4>Indexed fields</h4>
 
