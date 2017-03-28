@@ -69,33 +69,34 @@ The response will be in xml by default. Add the parameter `wt=json` for a JSON r
 | Field name | Description |
 | ---------- | ------------|
 
-|*identifier.id*|Museum or collection's own identifier / inventory no., e.g. NMK.2005.0257|
-|*identifier.owner*|Museum or collection code, e.g. NMK-B|
-|*artifact.uniqueId*|DiMu-specific unique id for object, e.g. 021045835852|
-|*artifact.name*|Name, alternative name, etc| 
-|*artifact.type*|Type of object, e.g. 'Exhibition'|
-|*artifact.classification*|Classification. Nasjonalmuseet uses [Outline](http://kulturnav.org/a8797483-ff02-4a4c-adf1-b406cbcd6fc2) where relevant.|
-|*artifact.pictureCount*|No. of images for this object|
-|*artifact.hasPictures*|*true* or *false*|
-|*artifact.defaultMediaIdentifier*|Id for default picture on DiMu media server (DMS)|
-|~~artifact.defaultPictureIndex~~|Id for default picture (obsolete)|
-|*artifact.publishedDate*|Date published to DiMu|
-|*artifact.updatedDate*|Last updated|
-|*artifact.ingress.title* or *artifact.title*|Object title|
-|*artifact.ingress.producer* or *artifact.producer*|Producer|
-|*artifact.ingress.producerRole*|Role code for producer: Artist, designer, architect etc|
-|*artifact.ingress.additionalProducers*|Any additional producers|
-|*artifact.ingress.production.fromYear* or *artifact.event.fromYear*|Production year start|
-|*artifact.ingress.production.toYear* or *artifact.event.toYear*|Production year end|
-|*artifact.ingress.production.place* or *artifact.event.place*|Production place|
-|*artifact.eventDescription*|Event description||*artifact.ingress.classification*|Classification|
-|*artifact.ingress.subjects*|Subjects|
-|*artifact.depictedPerson*|Depicted person|
-|*artifact.depictedPlace*|Depicted place|
-|*artifact.material*|Material|
-|*artifact.technique*|Technique|
-|*artifact.ingress.license* or *artifact.license*|Object license (not picture license)|
-|*allContent*|Free text search field (default)|
+| *identifier.id* | Museum or collection's own identifier / inventory no., e.g. NMK.2005.0257 |
+| *identifier.owner* | Museum or collection code, e.g. NMK-B |
+| *artifact.uniqueId* | DiMu-specific unique id for object, e.g. 021045835852 |
+| *artifact.name* | Name, alternative name, etc | 
+| *artifact.type* | Type of object, e.g. 'Exhibition' |
+|* artifact.classification* |Classification. Nasjonalmuseet uses [Outline](http://kulturnav.org/a8797483-ff02-4a4c-adf1-b406cbcd6fc2) where relevant. |
+|*artifact.pictureCount* | No. of images for this object |
+|*artifact.hasPictures* | *true* or *false* |
+|*artifact.defaultMediaIdentifier* | Id for default picture on DiMu media server (DMS) |
+|~~artifact.defaultPictureIndex~~ | Id for default picture (obsolete) |
+| *artifact.publishedDate* | Date published to DiMu |
+| *artifact.updatedDate* | Last updated |
+| *artifact.ingress.title* or *artifact.title* | Object title |
+| *artifact.ingress.producer* or *artifact.producer* | Producer |
+| *artifact.ingress.producerRole* | Role code for producer: Artist, designer, architect etc |
+| *artifact.ingress.additionalProducers* | Any additional producers |
+| *artifact.ingress.production.fromYear* or *artifact.event.fromYear* | Production year start |
+| *artifact.ingress.production.toYear* or *artifact.event.toYear* | Production year end |
+| *artifact.ingress.production.place* or *artifact.event.place* | Production place |
+| *artifact.eventDescription* | Event description |
+| *artifact.ingress.classification* | Classification |
+| *artifact.ingress.subjects* | Subjects |
+| *artifact.depictedPerson* | Depicted person |
+| *artifact.depictedPlace* | Depicted place |
+| *artifact.material* | Material |
+| *artifact.technique* | Technique |
+| *artifact.ingress.license* or *artifact.license* | Object license (not picture license) |
+| *allContent* | Free text search field (default) |
 
 <a name="examples"></a>
 <h2>Example Solr queries</h2>
