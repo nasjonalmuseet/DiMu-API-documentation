@@ -67,6 +67,7 @@ The response will be in xml by default. Add the parameter `wt=json` for a JSON r
 
 <h4>Indexed fields</h4>
 | Field name | Description |
+
 | ---------- | ------------|
 |*identifier.id*|Museum or collection's own identifier / inventory no., e.g. NMK.2005.0257|
 |*identifier.owner*|Museum or collection code, e.g. NMK-B|
