@@ -148,5 +148,5 @@ The full view will return more fields than the Solr response, in particular it w
 [Se here for an overview of the full object representation](full-object-view.md).
 
 <a name="media"></a><h2>Retrieving media</h2>
-All photo files from Nasjonalmuseet's collection are licensend [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/legalcode). The copyright of individual objects, in particular artworks, can carry a copyright that prevents free re-use. Any copyright for an individual object will be represented in the metadata.
+All photo files from Nasjonalmuseet's collection are licensed [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/legalcode). The copyright of individual objects, in particular artworks, can carry a copyright that prevents free re-use. Any copyright for an individual object will be represented in the metadata.
 [See here for how to retrieve pictures from the DiMu media servers](retrieving-media.md).
