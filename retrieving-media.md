@@ -1,10 +1,12 @@
 <h2>Retrieving pictures from the DiMu media servers</h2>
 Pictures of each object can be retrieved by using the media identifier from either the Solr response
+
 ``` Javascript
 artifact.defaultMediaIdentifier: "032wXVwUzT6J"
 ```
 
-or from the detail view (media=>pictures=>identfier)
+or from the detail view (media=>pictures=>identifier)
+
 ``` Javascript
 media: {
   pictures: [
@@ -22,6 +24,7 @@ media: {
   movies: [ ]
 }
 ```
+
 Use the mediaservers at `dms01.dimu.org`, e.g.
 
 http://dms01.dimu.org/image/032wXVwUz7v2?dimension=250x250
