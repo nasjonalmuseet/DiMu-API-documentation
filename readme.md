@@ -96,7 +96,8 @@ The response will be in xml by default. Add the parameter `wt=json` for a JSON r
 |*artifact.ingress.license* or *artifact.license*|Object license (not picture license)|
 |*allContent*|Free text search field (default)|
 
-<a name="examples"></a><h2>Example Solr queries</h2>
+<a name="examples"></a>
+<h2>Example Solr queries</h2>
 
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&wt=json&api.key=hack4no
 
