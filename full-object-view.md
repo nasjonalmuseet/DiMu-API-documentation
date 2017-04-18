@@ -4,6 +4,7 @@ http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 The url above will return a JSON representation of the object. Below are comments on central parts of the metadata returned.
 <h3>Titles</h3>
 Titles are sometimes specificed with a language attribute. If none is present it is assumed that the title is in Norwegian.
+
 ``` Javascript
 titles: [
   {
@@ -31,6 +32,7 @@ titles: [
 
 <h3>Motif</h3>
 Motif information varies in detail, and can contain depicted objects, people, places, geocoordinates, motif types/genres etc.
+
 ``` Javascript
 {
 motif: {
@@ -44,6 +46,7 @@ motif: {
 ```
 <h3>Media</h3>
 This particular object has three pictures. Resolution is specified. If width and height is set to 0, the image is of older date and of low resolution (below 800px). The picture files can hold a separate copyright license than the actual collection object. All Nasjonalmuseet's picture files are licensend CC-BY-NC. If a collection object is under copyright, license information will be specificed in the metadata.
+
 ``` Javascript
 media: {
   pictures: [
@@ -63,6 +66,7 @@ media: {
 ```
 [Retrieving pictures from the DiMu media servers](retrieving-media.md).
 <h3>Technique</h3>
+
 ``` Javascript
 technique: {
   techniques: [
@@ -75,6 +79,7 @@ technique: {
 ```
 <h3>Production</h3>
 Some producers (persons) have a more detailed level of information, such as time and place of birth and death, sometimes with geocoordinates, as well as [VIAF](https://viaf.org/) identifier and link, which can be utilised to retrieve biographical information from VIAF, [Getty ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/), Wikipedia, Wikidata etc.
+
 ``` Javascript
 producers: [
     {
