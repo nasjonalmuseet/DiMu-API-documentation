@@ -120,13 +120,13 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.nam
 
 With a specified number of rows returned per request. 100 rows is maximum. The response can be paged with the `start` parameter.
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Ukiyo-e&wt=json&rows=100&api.key=hack4no
+http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Ukiyo-e&wt=json&rows=100&api.key=demo
 
 <b>Object type [*Exhibition*]:</b>
 
 With a specified number of rows returned per request. 100 rows is maximum. The response can be paged with the `start` parameter.
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.type:Exhibition&wt=json&rows=100&api.key=hack4no
+http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.type:Exhibition&wt=json&rows=100&api.key=demo
 
 <b>Objects by a specific artist/producer [*Harriet Backer*]:</b>
 
@@ -134,11 +134,11 @@ http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.pro
 
 <b>Facet by producer, ordered alphabetically (default):</b>
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&rows=0&api.key=hack4no
+http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&rows=0&api.key=demo
 
 <b>Facet by producer, ordered by frequency / number of objects in collection:</b>
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&wt=json&facet.sort=count&rows=0&api.key=hack4no
+http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&wt=json&facet.sort=count&rows=0&api.key=demo
 
 <a name="full"></a><h2>Full object view</h2>
 The Solr response has limitations in certain fields. For instance, it will only return one title for an object although multiple titles may exist, for instance titles in other languages. Also, the Solr response will only list one producer per object even if more exist, and it will not list any attribute associated with the production event. E.g. if a production event carries the attribute <em>antatt sikker</em> (<em>presumed certain</em>), it will not be present in the Solr response.. 
