@@ -1,5 +1,5 @@
 <h2>Collection object full view</h2>
-http://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
+https://api.dimu.org/artifact/uuid/3DF10C96-B33B-45C1-92BF-D9211CE574C8
 
 The url above will return a JSON representation of the object. Below are comments on central parts of the metadata returned.
 <h3>Titles</h3>
@@ -78,7 +78,7 @@ technique: {
 }
 ```
 <h3>Production</h3>
-Some producers (persons) have a more detailed level of information, such as time and place of birth and death, sometimes with geocoordinates, as well as [VIAF](https://viaf.org/) identifier and link, which can be utilised to retrieve biographical information from VIAF, [Getty ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/), Wikipedia, Wikidata etc.
+Some producers (persons) have a more detailed level of information, such as time and place of birth and death, sometimes with geocoordinates, as well as [VIAF](https://viaf.org/) identifier and link, which can be utilised to retrieve biographical information from VIAF, [Getty ULAN](https://www.getty.edu/research/tools/vocabularies/ulan/), Wikipedia, Wikidata etc.
 
 ``` Javascript
 producers: [
@@ -86,7 +86,7 @@ producers: [
       info: {
       references: [
         {
-          url: "http://viaf.org/viaf/39374836",
+          url: "https://viaf.org/viaf/39374836",
           type: "VIAF",
           description: "permalink ",
           reference: "ID: 39374836"
