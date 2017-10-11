@@ -7,12 +7,12 @@
 
 This is an overview of methods to query the DigitaltMuseum (DiMu) API. The following guide has been created with a specific aim to facilitate querying Nasjonalmuseet's collection in DiMu, but the same methods can be used to query any other collection or across all collections in DiMu. Field use and detail level may vary in the different collections/museums.
 
-DigitaltMuseum contains more than 3,860,000 heritage objects from [Norway](http://www.digitaltmuseum.no) (1,85 mill. objects from 174 museums) and [Sweden](http://www.digitaltmuseum.se) (2 mill. objects from 51 museums) (27.09.2016).
+DigitaltMuseum contains more than 3,860,000 heritage objects from [Norway](https://www.digitaltmuseum.no) (1,85 mill. objects from 174 museums) and [Sweden](https://www.digitaltmuseum.se) (2 mill. objects from 51 museums) (27.09.2016).
 Nasjonalmuseet currently has 36,000 objects available in DigitaltMuseum. [Nasjonalmuseet's metadata are licensed Creative Commons Zero CC0](license.md). Re-use is encouraged.
 
-DigitaltMuseum and API to the metadata is provided by [KulturIT](http://www.kulturit.no). A general API documentation (in Norwegian only) is at http://api.dimu.org/doc/public_api.html. The documentation below is based on KulturIT's documentation and on Nasjonalmuseet's experience of using the API to create web applications using our own data in DiMu. [Disclaimer](disclaimer.md)
+DigitaltMuseum and API to the metadata is provided by [KulturIT](https://www.kulturit.no). A general API documentation (in Norwegian only) is at https://api.dimu.org/doc/public_api.html. The documentation below is based on KulturIT's documentation and on Nasjonalmuseet's experience of using the API to create web applications using our own data in DiMu. [Disclaimer](disclaimer.md)
 
-The API endpoint is `http://api.dimu.org/`
+The API endpoint is `https://api.dimu.org/`
 
 <h2>DiMu museums and collections</h2>
 
@@ -78,7 +78,7 @@ The response will be in xml by default. Add the parameter `wt=json` for a JSON r
 | *artifact.folderUids* | Folder ID of object, i.e. find all objects in a folder |
 | *artifact.name* | Name, alternative name, etc | 
 | *artifact.type* | Type of object, e.g. 'Exhibition' |
-|* artifact.classification* | Classification. Nasjonalmuseet uses [Outline](http://kulturnav.org/a8797483-ff02-4a4c-adf1-b406cbcd6fc2) where relevant. |
+|* artifact.classification* | Classification. Nasjonalmuseet uses [Outline](https://kulturnav.org/a8797483-ff02-4a4c-adf1-b406cbcd6fc2) where relevant. |
 |*artifact.pictureCount* | No. of images for this object |
 |*artifact.hasPictures* | *true* or *false* |
 |*artifact.defaultMediaIdentifier* | Id for default picture on DiMu media server (DMS) |
@@ -107,41 +107,41 @@ The response will be in xml by default. Add the parameter `wt=json` for a JSON r
 
 Searching in fields is done by adding `field:query` as a value to the `fq` parameter. Multiple searches can be joined by AND or OR separators or by stacking multiple fq parameters. Multiple fq parameters count as an AND search.
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&wt=json&api.key=hack4no
+https://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&wt=json&api.key=hack4no
 
 The above query will return all Nasjonalmuseet's objects in the DiMu API. Mandatory parameters for a query are the `q` parameter and an api key. (For hackathons in 2016, the `hack4o` key can be used.)
 
 <b>Objects related to a place [*Oslo*]:</b>
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.event.place:Oslo&wt=json&api.key=demo
+https://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.event.place:Oslo&wt=json&api.key=demo
 
 <b>Object name [*Maleri* (painting)]:</b>
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Maleri&wt=json&api.key=demo
+https://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Maleri&wt=json&api.key=demo
 
 <b>Object name [*Ukiyo-e*]:</b>
 
 With a specified number of rows returned per request. 100 rows is maximum. The response can be paged with the `start` parameter.
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Ukiyo-e&wt=json&rows=100&api.key=demo
+https://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.name:Ukiyo-e&wt=json&rows=100&api.key=demo
 
 <b>Object type [*Exhibition*]:</b>
 
 With a specified number of rows returned per request. 100 rows is maximum. The response can be paged with the `start` parameter.
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.type:Exhibition&wt=json&rows=100&api.key=demo
+https://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.type:Exhibition&wt=json&rows=100&api.key=demo
 
 <b>Objects by a specific artist/producer [*Harriet Backer*]:</b>
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.producer:Harriet%20Backer&wt=json&api.key=demo
+https://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.producer:Harriet%20Backer&wt=json&api.key=demo
 
 <b>Facet by producer, ordered alphabetically (default):</b>
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&rows=0&api.key=demo
+https://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&facet.sort=index&wt=json&rows=0&api.key=demo
 
 <b>Facet by producer, ordered by frequency / number of objects in collection:</b>
 
-http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&wt=json&facet.sort=count&rows=0&api.key=demo
+https://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&fq=artifact.hasPictures:true&facet=true&facet.mincount=1&facet.field=artifact.ingress.producer&facet.limit=7000&wt=json&facet.sort=count&rows=0&api.key=demo
 
 <a name="full"></a><h2>Full object view</h2>
 The Solr response has limitations in certain fields. For instance, it will only return one title for an object although multiple titles may exist, for instance titles in other languages. Also, the Solr response will only list one producer per object even if more exist, and it will not list any attribute associated with the production event. E.g. if a production event carries the attribute <em>antatt sikker</em> (<em>presumed certain</em>), it will not be present in the Solr response.. 
