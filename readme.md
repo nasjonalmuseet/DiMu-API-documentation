@@ -12,7 +12,7 @@ Nasjonalmuseet currently has 36,000 objects available in DigitaltMuseum. [Nasjon
 
 DigitaltMuseum and API to the metadata is provided by [KulturIT](https://www.kulturit.no). A general API documentation (in Norwegian only) is at https://api.dimu.org/doc/public_api.html. The documentation below is based on KulturIT's documentation and on Nasjonalmuseet's experience of using the API to create web applications using our own data in DiMu. [Disclaimer](disclaimer.md)
 
-The API endpoint is `https://api.dimu.org/`
+The API base url is `https://api.dimu.org/`
 
 <h2>DiMu museums and collections</h2>
 
@@ -107,7 +107,7 @@ The response will be in xml by default. Add the parameter `wt=json` for a JSON r
 
 Searching in fields is done by adding `field:query` as a value to the `fq` parameter. Multiple searches can be joined by AND or OR separators or by stacking multiple fq parameters. Multiple fq parameters count as an AND search.
 
-https://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&wt=json&api.key=hack4no
+https://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:NMK*&wt=json&api.key=demo
 
 The above query will return all Nasjonalmuseet's objects in the DiMu API. Mandatory parameters for a query are the `q` parameter and an api key. (For hackathons in 2016, the `hack4o` key can be used.)
 
