@@ -99,7 +99,8 @@ The response will be in xml by default. Add the parameter `wt=json` for a JSON r
 | *artifact.depictedPlace* | Depicted place |
 | *artifact.material* | Material |
 | *artifact.technique* | Technique |
-| *artifact.ingress.license* or *artifact.license* | Object license (not picture license) |
+| *artifact.license* | Object license (not picture license), truncated search. 'cc-by' will return 'cc-by-nc-nd' as well |
+| *artifact.ingress.license* | Object license (not picture license), exact match search. 'cc-by' will not return 'cc-by-nc-nd' |
 | *allContent* | Free text search field (default) |
 
 <a name="examples"></a>
